@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fillup And login here...</title>
+	<style>
+		body{
+		padding: 0px;
+		margin: 0px;
+		font-family: sans-serif;
+		background-image: url(pc1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+
+		}
+
+		.container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 28%;
+			margin: auto;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+			padding: 30px;
+			box-shadow: 0px 2px 10px 2px white;
+			border-radius: 6px;
+			box-sizing: border-box;
+
+		}
+
+		.container h2{
+			padding: 10px 15px;
+			letter-spacing: 1px;
+		}
+
+		.form-container{
+			padding: 16px;
+		}
+
+		input[type=text], input[type=password], button{
+			width: 100%;
+			padding: 8px 12px;
+			margin: 8px 0px;
+			display: inline-block;
+			box-sizing: border-box;
+			color: white;
+			background-color: transparent;
+			border: 2px solid white;
+			border-radius: 18px;
+		}
+
+		input[type=text]:focus, input[type=password]:focus{
+			outline: none;
+		}
+
+		button{
+			padding: 12px 20px;
+			cursor: pointer;
+			font-family: sans-serif;
+			font-size: 14px;
+			letter-spacing: 1px; 
+		}
+
+		button:hover{
+			background:black;
+			border-color: aqua;
+		}
+
+		button{
+			width: 35%;
+			margin-left: 10%;
+		}
+
+		input:hover{
+			background: black;
+			border-color: aqua;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h2>FORM</h2>
+	<div class="form-container">
+		<form>
+			<input type="text" placeholder="username" required="">
+			<br>
+			<input type="text" placeholder="email" required="">
+			<br>
+			<input type="text" placeholder="mobile" required="">
+			
+			<h3>PLANS</h3>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Standard</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Advanced</label><br>
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Pro</label>
+			<br><br>
+			<button type="submit">Register</button>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+
+</div>
+</body>
+</html>
